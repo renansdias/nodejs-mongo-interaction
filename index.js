@@ -29,3 +29,7 @@ connection.once('open', function() {
 		console.log('App running on port 5001...');
 	});
 });
+
+process.on('uncaughtException', function (err) {
+    console.log(err);
+}); 
