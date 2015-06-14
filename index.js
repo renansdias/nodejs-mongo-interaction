@@ -4,7 +4,7 @@ var app = express();
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var connection = mongoose.createConnection('mongodb://localhost:27017/docker-test');
+var connection = mongoose.createConnection('mongodb://192.168.59.103:32775/docker-test');
 var peopleSchema = new Schema({
 	_id: String,
 	name: String,
